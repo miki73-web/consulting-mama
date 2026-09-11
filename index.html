@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>子育ても、起業も、あきらめない。｜ママ起業家向け個別セッション</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Serif+JP:wght@300;400;500;600;700&family=Klee+One:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #FFF9F5;
+    --bg-sub: #FBEEE6;
+    --bg-card: #FFFFFF;
+    --pink-soft: #F8D5CE;
+    --pink: #EFA0A0;
+    --pink-deep: #E38B8B;
+    --terracotta: #C97862;
+    --terracotta-deep: #B26550;
+    --text: #3A2A24;
+    --text-sub: #6B5A52;
+    --text-mute: #9E8B82;
+    --line: #EFDDD2;
+    --gold: #C9A67B;
+    --line-green: #06C755;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Noto Serif JP", "Shippori Mincho", serif;
+    color: var(--text);
+    background: var(--bg);
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.03em;
+  }
+
+  .mincho { font-family: "Shippori Mincho", "Noto Serif JP", serif; }
+  .hand { font-family: "Klee One", "Shippori Mincho", serif; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .wrap-wide { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  /* ================= FIRST VIEW ================= */
+  .fv {
+    position: relative;
+    width: 100%;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  .fv-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .fv-below {
+    padding: 56px 24px 40px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-sub) 100%);
+  }
+  .fv-tag {
+    display: inline-block;
+    font-family: "Shippori Mincho", serif;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    color: var(--terracotta);
+    padding: 6px 20px;
+    border: 1px solid var(--terracotta);
+    border-radius: 999px;
+    margin-bottom: 24px;
+  }
+  .fv-lead {
+    font-family: "Shippori Mincho", serif;
+    font-size: 20px;
+    line-height: 2.2;
+    color: var(--text);
+    max-width: 620px;
+    margin: 0 auto 32px;
+    font-weight: 500;
+  }
+  .fv-lead em {
+    font-style: normal;
+    color: var(--terracotta);
+    font-weight: 600;
+  }
+
+  .badges {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 24px 0 40px;
+  }
+  .badge {
+    background: #fff;
+    border: 1px solid var(--pink-soft);
+    color: var(--text-sub);
+    font-size: 13px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    letter-spacing: 0.05em;
+  }
+  .badge b { color: var(--terracotta); font-weight: 600; }
+
+  /* ================= CTA ================= */
+  .cta-block {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 28px 32px;
+    margin: 32px auto;
+    max-width: 560px;
+    text-align: center;
+    box-shadow: 0 20px 50px -30px rgba(201, 120, 98, 0.4);
+    border: 1px solid var(--line);
+  }
+  .cta-title {
+    font-family: "Shippori Mincho", serif;
+    font-size: 20px;
+    margin: 0 0 20px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--terracotta);
+    color: #fff !important;
+    text-decoration: none;
+    font-family: "Shippori Mincho", serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 18px 40px;
+    border-radius: 999px;
+    letter-spacing: 0.08em;
+    box-shadow: 0 12px 30px -10px rgba(201, 120, 98, 0.6);
+    transition: transform .2s, box-shadow .2s;
+    min-width: 320px;
+  }
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 34px -8px rgba(201, 120, 98, 0.7);
+  }
+  .cta-btn .line-ic {
+    width: 26px; height: 26px;
+    background: #fff;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--line-green);
+    font-weight: 700;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .cta-note {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-sub);
+  }
+  .cta-note b {
+    display: inline-block;
+    background: var(--pink-soft);
+    color: var(--terracotta-deep);
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 2px;
+  }
+
+  /* ================= SECTION COMMON ================= */
+  section { padding: 100px 0; position: relative; }
+  section.alt { background: var(--bg-sub); }
+  section.white { background: #fff; }
+
+  .section-num {
+    display: block;
+    text-align: center;
+    font-family: "Shippori Mincho", serif;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    color: var(--terracotta);
+    margin-bottom: 8px;
+  }
+  .section-num::before,
+  .section-num::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: var(--terracotta);
+    vertical-align: middle;
+    margin: 0 12px;
+  }
+  .h-title {
+    text-align: center;
+    font-family: "Shippori Mincho", serif;
+    font-size: 30px;
+    line-height: 1.7;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: var(--text);
+    letter-spacing: 0.05em;
+  }
+  .h-title .em {
+    color: var(--terracotta);
+    position: relative;
+  }
+  .h-title .em::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -6px;
+    height: 6px;
+    background: var(--pink-soft);
+    z-index: -1;
+    border-radius: 4px;
+  }
+  .h-sub {
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-sub);
+    margin: 0 auto 56px;
+    max-width: 560px;
+    line-height: 2;
+  }
+
+  /* ================= WORRIES ================= */
+  .worries {
+    background: #fff;
+    border-radius: 24px;
+    padding: 48px 36px;
+    box-shadow: 0 30px 60px -40px rgba(58, 42, 36, 0.2);
+    position: relative;
+  }
+  .worries::before {
+    content: "";
+    position: absolute;
+    top: -14px; left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 28px; height: 28px;
+    background: #fff;
+  }
+  .worries-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+  }
+  .worries-list li {
+    padding: 14px 0 14px 40px;
+    position: relative;
+    border-bottom: 1px dashed var(--line);
+    font-size: 15.5px;
+    line-height: 1.9;
+    color: var(--text);
+  }
+  .worries-list li:last-child { border-bottom: none; }
+  .worries-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 8px; top: 14px;
+    width: 22px; height: 22px;
+    background: var(--pink);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .worries-foot {
+    text-align: center;
+    font-family: "Shippori Mincho", serif;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--text);
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+  }
+  .worries-foot .em {
+    color: var(--terracotta);
+    font-weight: 600;
+    background: linear-gradient(transparent 60%, var(--pink-soft) 60%);
+    padding: 0 4px;
+  }
+
+  /* ================= PROBLEM ================= */
+  .prob-copy {
+    font-family: "Shippori Mincho", serif;
+    font-size: 17px;
+    line-height: 2.2;
+    color: var(--text);
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 40px;
+  }
+  .prob-list {
+    list-style: none;
+    padding: 32px 40px;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    max-width: 560px;
+    margin: 0 auto 40px;
+  }
+  .prob-list li {
+    padding: 10px 0 10px 32px;
+    position: relative;
+    font-size: 15.5px;
+    color: var(--text);
+  }
+  .prob-list li::before {
+    content: "";
+    position: absolute;
+    left: 4px; top: 20px;
+    width: 12px; height: 12px;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23C97862'><path d='M10 2 L12 8 L18 10 L12 12 L10 18 L8 12 L2 10 L8 8 Z'/></svg>") center/contain no-repeat;
+  }
+  .prob-emph {
+    font-family: "Shippori Mincho", serif;
+    font-size: 20px;
+    line-height: 2.2;
+    text-align: center;
+    color: var(--text);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .prob-emph .em {
+    color: var(--terracotta);
+    font-weight: 600;
+    background: linear-gradient(transparent 60%, var(--pink-soft) 60%);
+    padding: 0 4px;
+  }
+
+  /* ================= AFTER ================= */
+  .after-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .after-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px 20px 24px 60px;
+    position: relative;
+    border: 1px solid var(--line);
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text);
+  }
+  .after-item::before {
+    content: "";
+    position: absolute;
+    left: 20px; top: 26px;
+    width: 26px; height: 26px;
+    background: var(--pink-soft) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C97862' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>") center/14px no-repeat;
+    border-radius: 50%;
+  }
+  .disclaimer {
+    text-align: center;
+    color: var(--text-mute);
+    font-size: 12.5px;
+    line-height: 1.9;
+    margin-top: 32px;
+  }
+
+  /* ================= CONTENT (session details) ================= */
+  .content-item {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 40px 36px;
+    margin-bottom: 20px;
+    border: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  .content-num {
+    font-family: "Shippori Mincho", serif;
+    font-size: 40px;
+    line-height: 1;
+    color: var(--terracotta);
+    font-weight: 500;
+    padding-top: 4px;
+    letter-spacing: 0.05em;
+  }
+  .content-num small {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--text-mute);
+    margin-top: 6px;
+  }
+  .content-body h3 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 20px;
+    margin: 0 0 14px;
+    color: var(--text);
+    line-height: 1.6;
+    font-weight: 600;
+  }
+  .content-body p {
+    margin: 0 0 12px;
+    font-size: 15px;
+    line-height: 1.95;
+    color: var(--text-sub);
+  }
+  .content-body p:last-child { margin-bottom: 0; }
+  .content-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+  }
+  .content-body ul li {
+    padding: 4px 0 4px 20px;
+    position: relative;
+    font-size: 14.5px;
+    color: var(--text-sub);
+  }
+  .content-body ul li::before {
+    content: "";
+    position: absolute;
+    left: 4px; top: 14px;
+    width: 6px; height: 6px;
+    background: var(--pink);
+    border-radius: 50%;
+  }
+
+  /* ================= FEATURES ================= */
+  .feat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .feat-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px 28px;
+    border: 1px solid var(--line);
+    text-align: center;
+  }
+  .feat-icon {
+    width: 64px; height: 64px;
+    margin: 0 auto 20px;
+    background: var(--pink-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feat-icon svg { width: 30px; height: 30px; stroke: var(--terracotta); }
+  .feat-card h4 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 17px;
+    margin: 0 0 12px;
+    color: var(--text);
+    line-height: 1.6;
+    font-weight: 600;
+  }
+  .feat-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-sub);
+  }
+
+  /* ================= VOICE ================= */
+  .voice-list {
+    display: grid;
+    gap: 24px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .voice-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 36px 32px 30px;
+    position: relative;
+    border: 1px solid var(--line);
+  }
+  .voice-card::before {
+    content: "\201C";
+    position: absolute;
+    top: 8px; left: 24px;
+    font-family: "Shippori Mincho", serif;
+    font-size: 80px;
+    color: var(--pink-soft);
+    line-height: 1;
+  }
+  .voice-body {
+    font-family: "Shippori Mincho", serif;
+    font-size: 15.5px;
+    line-height: 2;
+    color: var(--text);
+    padding-left: 40px;
+    margin: 0 0 16px;
+  }
+  .voice-meta {
+    text-align: right;
+    font-size: 13px;
+    color: var(--terracotta);
+    letter-spacing: 0.1em;
+    font-family: "Shippori Mincho", serif;
+  }
+  .voice-meta::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: var(--terracotta);
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  /* ================= PRICE ================= */
+  .price-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 48px 40px;
+    max-width: 640px;
+    margin: 0 auto;
+    border: 1px solid var(--line);
+    box-shadow: 0 30px 60px -40px rgba(58, 42, 36, 0.2);
+  }
+  .price-title {
+    text-align: center;
+    font-family: "Shippori Mincho", serif;
+    font-size: 22px;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .price-amount {
+    text-align: center;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin: 24px 0 32px;
+  }
+  .price-amount .yen {
+    font-family: "Shippori Mincho", serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--terracotta);
+    letter-spacing: 0.02em;
+  }
+  .price-amount .yen small {
+    font-size: 20px;
+    margin-left: 4px;
+  }
+  .price-amount .tax {
+    display: block;
+    font-size: 13px;
+    color: var(--text-mute);
+    margin-top: 4px;
+  }
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+  }
+  .price-table th,
+  .price-table td {
+    padding: 14px 8px;
+    text-align: left;
+    border-bottom: 1px dashed var(--line);
+    font-size: 14.5px;
+    color: var(--text);
+  }
+  .price-table th {
+    color: var(--terracotta);
+    font-family: "Shippori Mincho", serif;
+    font-weight: 500;
+    width: 120px;
+    letter-spacing: 0.1em;
+  }
+  .price-includes {
+    background: var(--bg-sub);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 20px;
+  }
+  .price-includes h5 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 14px;
+    margin: 0 0 12px;
+    color: var(--terracotta);
+    letter-spacing: 0.1em;
+  }
+  .price-includes ul {
+    list-style: none;
+    padding: 0; margin: 0;
+  }
+  .price-includes li {
+    padding: 4px 0 4px 20px;
+    position: relative;
+    font-size: 14px;
+    color: var(--text-sub);
+    line-height: 1.8;
+  }
+  .price-includes li::before {
+    content: "";
+    position: absolute;
+    left: 4px; top: 14px;
+    width: 8px; height: 8px;
+    background: var(--pink);
+    border-radius: 50%;
+  }
+
+  /* ================= FLOW ================= */
+  .flow {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .flow-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 24px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+  .flow-item:last-child { border-bottom: none; }
+  .flow-step {
+    text-align: center;
+  }
+  .flow-step .step-label {
+    font-family: "Shippori Mincho", serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--terracotta);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .flow-step .step-num {
+    font-family: "Shippori Mincho", serif;
+    font-size: 40px;
+    color: var(--terracotta);
+    font-weight: 500;
+    line-height: 1;
+    display: block;
+  }
+  .flow-body h4 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: var(--text);
+  }
+  .flow-body p {
+    margin: 0 0 8px;
+    font-size: 14.5px;
+    line-height: 1.9;
+    color: var(--text-sub);
+  }
+  .flow-body ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+    font-size: 14px;
+    color: var(--text-sub);
+    line-height: 1.9;
+  }
+
+  /* ================= FAQ ================= */
+  .faq { max-width: 720px; margin: 0 auto; }
+  .faq-item {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 28px;
+    margin-bottom: 12px;
+    border: 1px solid var(--line);
+  }
+  .faq-q {
+    font-family: "Shippori Mincho", serif;
+    font-size: 16px;
+    color: var(--text);
+    padding-left: 40px;
+    position: relative;
+    line-height: 1.7;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+  }
+  .faq-q::before {
+    content: "Q";
+    position: absolute;
+    left: 0; top: -2px;
+    width: 28px; height: 28px;
+    background: var(--terracotta);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shippori Mincho", serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .faq-a {
+    padding: 16px 0 4px 40px;
+    margin-top: 12px;
+    border-top: 1px dashed var(--line);
+    font-size: 14.5px;
+    line-height: 2;
+    color: var(--text-sub);
+    position: relative;
+  }
+  .faq-a::before {
+    content: "A";
+    position: absolute;
+    left: 0; top: 14px;
+    width: 28px; height: 28px;
+    background: var(--pink-soft);
+    color: var(--terracotta);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shippori Mincho", serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* ================= INSTRUCTOR ================= */
+  .instructor {
+    background: #fff;
+    border-radius: 24px;
+    padding: 56px 48px;
+    max-width: 760px;
+    margin: 0 auto;
+    box-shadow: 0 30px 60px -40px rgba(58, 42, 36, 0.15);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .instructor-photo {
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--pink-soft), var(--bg-sub));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-mute);
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 30px -10px rgba(201, 120, 98, 0.2);
+    letter-spacing: 0.1em;
+  }
+  .instructor-name {
+    font-family: "Shippori Mincho", serif;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    color: var(--terracotta);
+    margin: 0 0 4px;
+  }
+  .instructor-title {
+    font-family: "Shippori Mincho", serif;
+    font-size: 28px;
+    color: var(--text);
+    margin: 0 0 24px;
+    font-weight: 600;
+  }
+  .instructor-body p {
+    margin: 0 0 14px;
+    font-size: 14.5px;
+    line-height: 2;
+    color: var(--text-sub);
+  }
+  .instructor-body .quote {
+    font-family: "Shippori Mincho", serif;
+    color: var(--terracotta);
+    font-size: 15px;
+    padding: 16px 20px;
+    background: var(--bg-sub);
+    border-radius: 10px;
+    margin: 16px 0;
+  }
+
+  /* ================= POLICY ================= */
+  .policy {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 36px;
+    border: 1px solid var(--line);
+  }
+  .policy h4 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 15px;
+    color: var(--terracotta);
+    margin: 20px 0 8px;
+    letter-spacing: 0.05em;
+  }
+  .policy h4:first-child { margin-top: 0; }
+  .policy p, .policy li {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-sub);
+    margin: 0 0 6px;
+  }
+  .policy ul { padding-left: 20px; margin: 4px 0 8px; }
+
+  /* ================= FINAL CTA ================= */
+  .final {
+    background: linear-gradient(180deg, var(--bg-sub) 0%, var(--pink-soft) 100%);
+    text-align: center;
+    padding: 120px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .final::before, .final::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+  }
+  .final::before {
+    width: 300px; height: 300px;
+    top: -100px; left: -80px;
+  }
+  .final::after {
+    width: 220px; height: 220px;
+    bottom: -80px; right: -60px;
+  }
+  .final-inner { position: relative; z-index: 1; }
+  .final h2 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 30px;
+    line-height: 1.8;
+    margin: 0 0 24px;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .final h2 .em {
+    color: var(--terracotta);
+    background: linear-gradient(transparent 60%, #fff 60%);
+    padding: 0 4px;
+  }
+  .final p.lead {
+    font-family: "Shippori Mincho", serif;
+    font-size: 16px;
+    line-height: 2.2;
+    color: var(--text-sub);
+    margin: 0 auto 40px;
+    max-width: 560px;
+  }
+  .final .badges { margin-top: 32px; }
+  .final .badges .badge { background: rgba(255,255,255,0.7); border-color: transparent;}
+
+  /* ================= FOOTER ================= */
+  footer {
+    background: var(--text);
+    color: #C5B4A9;
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 2;
+  }
+
+  /* ================= DIVIDER ================= */
+  .divider {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .divider svg { display: inline-block; }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 720px) {
+    .fv-lead { font-size: 16px; line-height: 2; padding: 0 8px; }
+    .h-title { font-size: 22px; }
+    section { padding: 72px 0; }
+    .content-item { grid-template-columns: 1fr; padding: 32px 24px; gap: 12px; }
+    .content-num { font-size: 32px; }
+    .content-num small { display: inline-block; margin-left: 12px; margin-top: 0; }
+    .after-grid, .feat-grid { grid-template-columns: 1fr; }
+    .instructor { grid-template-columns: 1fr; padding: 40px 24px; text-align: center; gap: 24px; }
+    .instructor-photo { margin: 0 auto; }
+    .cta-btn { min-width: 0; width: 100%; font-size: 16px; padding: 16px 24px; }
+    .worries, .price-card { padding: 32px 20px; }
+    .flow-item { grid-template-columns: 60px 1fr; gap: 16px; }
+    .flow-step .step-num { font-size: 32px; }
+    .final h2 { font-size: 22px; }
+    .voice-body { padding-left: 20px; font-size: 15px; }
+    .fv-tag { font-size: 12px; }
+    .fv-below { padding: 40px 20px 32px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== 1. FIRST VIEW ========== -->
+<div class="fv">
+  <img src="bannar.png" alt="子育ても、起業も、あきらめない。ママ起業家のためのマンツーマン個別コンサルティング" class="fv-img" />
+
+  <div class="fv-below">
+    <p class="fv-lead">
+      「何から始めればいいかわからない」<br />
+      「発信しているのに、お申し込みにつながらない」<br />
+      「家族との時間も大切にしながら、事業を成長させたい」<br /><br />
+      そんな<em>ママ起業家</em>のための、<br />
+      マンツーマン個別コンサルティングセッションです。
+    </p>
+
+    <div class="cta-block">
+      <p class="cta-title">まずはお気軽に<br />個別セッションについて相談する</p>
+      <a class="cta-btn" href="https://lin.ee/vWci6w5e" target="_blank" rel="noopener">
+        公式LINEで相談する
+      </a>
+      <p class="cta-note">
+        公式LINEに登録後、<br />
+        <b>【個別】</b>と送ってください。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 2. WORRIES + FOR WHOM (merged) ========== -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="h-title">こんなお悩み、<br /><span class="em">ありませんか？</span></h2>
+
+    <div class="worries">
+      <ul class="worries-list">
+        <li>起業したけれど、何から始めればいいかわからない</li>
+        <li>SNSで発信しているけれど、集客につながらない</li>
+        <li>自分の強みやサービスの魅力を言葉にできない</li>
+        <li>商品やサービスの内容、価格設定に迷っている</li>
+        <li>やりたいことが多く、優先順位をつけられない</li>
+        <li>頑張っているのに、売上が安定しない</li>
+        <li>家事・育児・仕事の両立で毎日余裕がない</li>
+        <li>家族との時間を大切にしながら働きたい</li>
+        <li>AIや便利なツールを使って業務を効率化したい</li>
+        <li>相談できる相手がいなくて、ひとりで悩んでいる</li>
+      </ul>
+      <p class="worries-foot">
+        ひとつでも当てはまる方へ。<br />
+        限られた時間の中で、やみくもに頑張るのではなく、<br />
+        <span class="em">今の自分に必要なことを整理すること</span>から始めませんか？
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 3. PROBLEM ========== -->
+<section>
+  <div class="wrap">
+    <h2 class="h-title">ひとりで頑張る起業から、<br /><span class="em">必要なことに集中できる起業へ</span></h2>
+
+    <p class="prob-copy">
+      ママ起業は、子どもの予定や家族の状況によって、<br />
+      思うように時間が取れないこともあります。<br /><br />
+      だからこそ、<br />
+      自分のライフスタイルに合った事業の土台づくりが必要です。
+    </p>
+
+    <ul class="prob-list">
+      <li>自分の強みを活かせるサービスをつくる</li>
+      <li>理想のお客様に届く発信をする</li>
+      <li>無理なく続けられる集客の仕組みを整える</li>
+      <li>やることを整理し、優先順位をつける</li>
+      <li>家族との時間も大切にしながら働く</li>
+    </ul>
+
+    <p class="prob-emph">
+      しかし、ひとりで起業していると、目の前の作業に追われて<br />
+      「本当は何を改善すればいいのか」<br />
+      「次に何をすればいいのか」<br />
+      が見えなくなることがあります。<br /><br />
+      このセッションでは、あなたの現在地を一緒に確認しながら、<br />
+      <span class="em">今のあなたに必要なこと</span>と<br />
+      <span class="em">次に取り組むべきこと</span>を明確にしていきます。
+    </p>
+  </div>
+</section>
+
+<!-- ========== 4. AFTER ========== -->
+<section class="alt">
+  <div class="wrap-wide">
+    <h2 class="h-title">60分後、<br /><span class="em">こんな状態</span>を目指します</h2>
+    <p class="h-sub">
+      すべてを一度に解決しようとするのではなく、<br />
+      事前アンケートをもとに、あなたが今もっとも必要としているテーマを優先します。
+    </p>
+
+    <div class="after-grid">
+      <div class="after-item">自分の強みや経験を整理できる</div>
+      <div class="after-item">今取り組むべきことが明確になる</div>
+      <div class="after-item">発信や集客の方向性が見えてくる</div>
+      <div class="after-item">商品・サービスの改善ポイントがわかる</div>
+      <div class="after-item">やることの優先順位をつけられる</div>
+      <div class="after-item">自分に合った時間の使い方を考えられる</div>
+      <div class="after-item">セッション後の具体的な行動が決まる</div>
+      <div class="after-item">ひとりで悩み続ける状態から抜け出せる</div>
+    </div>
+    <p class="disclaimer">
+      ※効果や変化には個人差があります。<br />
+      ※60分の中で扱える内容には限りがあります。
+    </p>
+  </div>
+</section>
+
+<!-- ========== 5. CONTENT (merged with features) ========== -->
+<section>
+  <div class="wrap-wide">
+    <h2 class="h-title">あなたの状況に合わせて、<br /><span class="em">必要なテーマ</span>を一緒に整理します</h2>
+    <p class="h-sub">
+      決まったカリキュラムを一方的に進めるのではなく、事前アンケートをもとに、<br />
+      あなたが今もっとも必要としているテーマを優先して扱います。
+    </p>
+
+    <div class="content-item">
+      <div class="content-num">01<small>STRENGTH</small></div>
+      <div class="content-body">
+        <h3>現状の棚卸し・強みの発見</h3>
+        <p>現在の活動状況、これまでの経験、持っているスキル、サービス内容などを一緒に整理します。自分では当たり前だと思っている経験の中に、お客様にとって価値のある強みが隠れていることもあります。</p>
+        <p>あなたならではの魅力を言語化し、どのようなお客様に届けるとよいのかを考えます。</p>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-num">02<small>PRODUCT</small></div>
+      <div class="content-body">
+        <h3>商品・サービスの整理</h3>
+        <p>「何を商品にすればいいかわからない」「サービスの魅力が伝わらない」「価格設定に迷っている」——そんな方に向けて、商品の方向性や内容を整理します。</p>
+        <p>お客様の悩みと、あなたが提供できる価値をつなげながら、より伝わりやすいサービスの形を一緒に考えます。</p>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-num">03<small>MARKETING</small></div>
+      <div class="content-body">
+        <h3>集客・発信まわり</h3>
+        <p>Instagram、ブログ、公式LINEなど、あなたに合った発信方法や集客の方向性を整理します。</p>
+        <ul>
+          <li>プロフィールの見直し</li>
+          <li>発信テーマの整理</li>
+          <li>お客様に届く伝え方</li>
+          <li>申し込みまでの導線づくり</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-num">04<small>SNS</small></div>
+      <div class="content-body">
+        <h3>SNS・LINE運用の実務</h3>
+        <p>Instagram・SNS・公式LINEの運用代行経験をもとに、日々の発信やお客様とのコミュニケーションについて、実務目線でお伝えします。</p>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-num">05<small>EFFICIENCY</small></div>
+      <div class="content-body">
+        <h3>業務効率化・ツール活用</h3>
+        <p>発信、顧客対応、予約管理、資料作成など、起業に必要な業務を効率化する方法を一緒に考えます。</p>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-num">06<small>AI</small></div>
+      <div class="content-body">
+        <h3>AIを使った仕事の進め方</h3>
+        <p>AIを活用した投稿作成、アイデア整理、文章作成、業務改善など、あなたの事業に合ったAIの使い方を考えます。</p>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="content-num">07<small>TIME</small></div>
+      <div class="content-body">
+        <h3>時間の使い方・仕組みづくり</h3>
+        <p>SE・プログラマーとして13年、プロジェクトリーダーとしてスケジュール管理・タスク管理を担当してきた経験から、以下をサポートします。</p>
+        <ul>
+          <li>やることの優先順位づけ</li>
+          <li>タスクの整理・スケジュールの立て方</li>
+          <li>子育てと仕事を両立するための時間設計</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 選ばれる理由（旧6を統合） -->
+    <div style="margin-top: 72px;">
+      <h3 style="text-align:center; font-family:'Shippori Mincho',serif; font-size:20px; margin:0 0 40px; color:var(--terracotta); letter-spacing:0.1em;">— このセッションが選ばれる理由 —</h3>
+      <div class="feat-grid">
+        <div class="feat-card">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/></svg></div>
+          <h4>幅広い実務経験<br />をもとに相談できる</h4>
+          <p>起業、カメラマン、SNS運用、講師、業務代行、AI活用など、さまざまな実務経験をもとにアドバイス。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h4>ママ起業家ならではの<br />事情を理解している</h4>
+          <p>子どもの予定や家族との時間を大切にしながら、無理なく続けられる方法を一緒に考えます。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11H1v3h8v3l3-3.5L9 10v1z"/><path d="M22 12A10 10 0 1 1 12 2"/></svg></div>
+          <h4>あなたの状況に<br />合わせて進める</h4>
+          <p>決まったカリキュラムを一方的に進めるのではなく、今必要なテーマを優先します。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h4>セッション後の<br />行動まで整理できる</h4>
+          <p>話して終わりではなく、セッション後に何をするのか、具体的な行動に落とし込みます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 6. VOICE ========== -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="h-title">参加された方の<span class="em">声</span></h2>
+
+    <div class="voice-list">
+      <div class="voice-card">
+        <p class="voice-body">自分の強みがわからず悩んでいましたが、これまでの経験を整理してもらい、自分にも提供できる価値があると気づけました。</p>
+        <p class="voice-meta">30代・パート主婦</p>
+      </div>
+      <div class="voice-card">
+        <p class="voice-body">SNSで何を発信すればいいかわからなかったのですが、発信の軸が明確になり、投稿を作りやすくなりました。</p>
+        <p class="voice-meta">30代・講師業</p>
+      </div>
+      <div class="voice-card">
+        <p class="voice-body">やることが多すぎて何も進まない状態でしたが、優先順位を整理できたので、セッション後すぐに行動できました。</p>
+        <p class="voice-meta">30代・オンライン秘書</p>
+      </div>
+      <div class="voice-card">
+        <p class="voice-body">子どもとの時間も大切にしたいという気持ちを理解してもらえたうえで、無理なく続けられる働き方を一緒に考えてもらえました。</p>
+        <p class="voice-meta">30代・カメラマン</p>
+      </div>
+      <div class="voice-card">
+        <p class="voice-body">AIやツールを活用する方法を教えていただき、日々の作業時間を減らせそうです。</p>
+        <p class="voice-meta">40代・オンライン秘書</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7. INSTRUCTOR ========== -->
+<section>
+  <div class="wrap-wide">
+    <h2 class="h-title">あなたと同じ道を歩んできた<br /><span class="em">ママ起業家</span>です</h2>
+
+    <div class="instructor">
+      <div class="instructor-photo">
+        <img src="profile.png" alt="プロフィール" class="fv-img" />
+      </div>
+      <div>
+        <h3 class="instructor-title">みっきー</h3>
+        <div class="instructor-body">
+          <p>小学生双子男児のママ。子どもが2歳のときにカメラマンとして起業しました。</p>
+          <p>システムエンジニア・プログラマーとして13年のキャリアを持ち、プロジェクトリーダーとしてスケジュール管理・タスク管理を担当した経験があります。</p>
+          <p>起業後はカメラマンをはじめ、インスタ集客講座講師、インスタ・SNS・公式LINE・UTAGE運用代行、プロモーションサポート、AI講座講師など、幅広い分野で活動してきました。現在は、AIを活用したSNS代行や業務効率化にも取り組んでいます。</p>
+          <div class="quote">
+            「子どもとの時間も大切にしたい」<br />
+            「でも、自分の仕事もあきらめたくない」<br />
+            そんな方が、今の環境に合った方法で前に進めるようサポートしています。
+          </div>
+          <p>「ママだから」と諦めずに、一緒に一歩ずつ進んでいきましょう。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 8. PRICE ========== -->
+<section class="alt">
+  <div class="wrap-wide">
+    <h2 class="h-title">セッション<span class="em">詳細</span></h2>
+
+    <div class="price-card">
+      <div class="price-amount" style="border-top:none; padding-top:0; margin-top:0;">
+        <span class="yen">22,000<small>円（税込）</small></span>
+      </div>
+
+      <table class="price-table">
+        <tr><th>形式</th><td>Zoomオンライン</td></tr>
+        <tr><th>時間</th><td>60分</td></tr>
+        <tr><th>内容</th><td>事前アンケート＋個別コンサルティング</td></tr>
+        <tr><th>お支払い</th><td>銀行振込 / クレジットカード（PayPal）</td></tr>
+      </table>
+
+      <div class="price-includes">
+        <h5>セッションに含まれる内容</h5>
+        <ul>
+          <li>事前アンケートで現状やお悩みをヒアリング</li>
+          <li>Zoomでの60分個別セッション</li>
+        </ul>
+      </div>
+      <p class="disclaimer" style="text-align:left; margin-top:16px;">※時間内でのお悩みに対するコンサルティングとなるため、すべてのお悩みを扱えるとは限りません。</p>
+    </div>
+
+    <div class="cta-block" style="margin-top: 48px;">
+      <p class="cta-title">個別セッションに申し込む</p>
+      <a class="cta-btn" href="https://lin.ee/vWci6w5e" target="_blank" rel="noopener">
+        公式LINEで申し込む
+      </a>
+      <p class="cta-note">
+        公式LINEに登録後、<br />
+        <b>【個別】</b>と送ってください。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 9. FLOW ========== -->
+<section>
+  <div class="wrap">
+    <h2 class="h-title">お申し込みから<br />セッションまでの<span class="em">流れ</span></h2>
+
+    <div class="flow">
+      <div class="flow-item">
+        <div class="flow-step">
+          <span class="step-label">STEP</span>
+          <span class="step-num">01</span>
+        </div>
+        <div class="flow-body">
+          <h4>公式LINEに登録</h4>
+          <p>公式LINEにご登録後、<strong style="color:var(--terracotta);">【個別】</strong>と送信してください。</p>
+          <p>その後、以下をお送りください。</p>
+          <ul>
+            <li>ご希望の日程を複数</li>
+            <li>現在の活動状況</li>
+            <li>ご相談内容</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flow-item">
+        <div class="flow-step">
+          <span class="step-label">STEP</span>
+          <span class="step-num">02</span>
+        </div>
+        <div class="flow-body">
+          <h4>事前アンケートのご記入</h4>
+          <p>日程調整後、現在の活動状況やお悩みをお伺いする事前アンケートを送付します。</p>
+        </div>
+      </div>
+
+      <div class="flow-item">
+        <div class="flow-step">
+          <span class="step-label">STEP</span>
+          <span class="step-num">03</span>
+        </div>
+        <div class="flow-body">
+          <h4>Zoomにてセッション</h4>
+          <p>60分のマンツーマンセッションで、現状の課題・改善策・今後のアクション等を一緒に整理します。</p>
+          <p style="color: var(--text-mute); font-size: 13px;">※お申し込み後、2営業日以内にご連絡いたします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 10. FAQ ========== -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="h-title">よくあるご<span class="em">質問</span></h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        <p class="faq-q">これから起業したい場合でも申し込めますか？</p>
+        <p class="faq-a">はい、大丈夫です。起業前の方も、これから始めたいことや活かしたい経験を整理するためにご利用いただけます。</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">起業したばかりでも申し込めますか？</p>
+        <p class="faq-a">はい、もちろん大丈夫です。現在の活動状況に合わせて、今必要なことを一緒に整理します。</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">相談内容がまとまっていなくても大丈夫ですか？</p>
+        <p class="faq-a">はい、大丈夫です。事前アンケートをもとに、セッション内で一緒に整理していきます。</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">セッションは録画できますか？</p>
+        <p class="faq-a">ご希望の方には録画データをお送りしています。お申し込み時にお知らせください。</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">支払い方法を教えてください。</p>
+        <p class="faq-a">銀行振込、クレジットカード（PayPal）よりご選択ください。</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">セッションを受ければ売上が上がりますか？</p>
+        <p class="faq-a">売上や集客を保証するものではありません。現在の状況を整理し、今後の方向性や具体的な行動を明確にするためのセッションです。</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">子どもがいるため、静かな環境を用意できないかもしれません。</p>
+        <p class="faq-a">お子様と一緒にZoom参加も問題ありません。ただし、十分に相談内容を扱うためにも、できるだけ集中できる時間・環境をご用意いただくことをおすすめします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 11. POLICY ========== -->
+<section>
+  <div class="wrap">
+    <h2 class="h-title">お支払い・<span class="em">キャンセル</span>について</h2>
+
+    <div class="policy">
+      <h4>お支払いについて</h4>
+      <p>お申し込み後、指定の期日までにお支払いをお願いいたします。お支払い方法は銀行振込、またはクレジットカード（PayPal）よりお選びいただけます。</p>
+
+      <h4>日程変更・キャンセルについて</h4>
+      <p>お子様の体調不良や、やむを得ないご事情による日程変更は、<strong style="color:var(--terracotta)">無料で承ります</strong>。公式LINEよりお気軽にご連絡ください。</p>
+      <p>ママ起業家の方にこそ安心してご利用いただけるよう、日程の調整は柔軟に対応いたしますのでご安心ください。</p>
+
+      <h4>ご返金について</h4>
+      <p>本サービスは個別コンサルティングという性質上、<strong style="color:var(--terracotta)">お支払い後の返金はいたしかねます</strong>。あらかじめご了承の上、お申し込みください。</p>
+      <p>なお、サービス提供側の都合により延期ではなく実施が困難となった場合は、全額返金いたします。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 12. FINAL CTA ========== -->
+<section class="final">
+  <div class="final-inner">
+    <h2>
+      ひとりで悩み続ける起業から、<br />
+      <span class="em">一緒に整理して進める起業</span>へ。
+    </h2>
+    <p class="lead">
+      あなたの経験や強みを活かして、<br />
+      家族との時間も大切にできる働き方を<br />
+      一緒につくりませんか？
+    </p>
+
+    <div class="cta-block" style="background: rgba(255,255,255,0.95);">
+      <p class="cta-title">個別セッションに申し込む</p>
+      <a class="cta-btn" href="https://lin.ee/vWci6w5e" target="_blank" rel="noopener">
+        公式LINEで申し込む
+      </a>
+      <p class="cta-note">
+        公式LINEに登録後、<br />
+        <b>【個別】</b>と送ってください。
+      </p>
+    </div>
+
+    <p class="disclaimer" style="margin-top: 24px;">
+      ※お申し込み後、2営業日以内にご連絡いたします。
+    </p>
+  </div>
+</section>
+
+<footer>
+  © みっきー
+</footer>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
